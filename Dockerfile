@@ -2,7 +2,7 @@ FROM ubuntu:focal
 
 RUN apt-get -y update
 RUN apt-get -y upgrade
-RUN apt-get -y install build-essential curl git
+RUN apt-get -y install build-essential curl git python2
 ENV NVM_DIR $HOME/.nvm
 RUN mkdir -p $NVM_DIR
 ENV NODE_VERSION 10.20.0
