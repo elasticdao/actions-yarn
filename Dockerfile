@@ -1,6 +1,6 @@
 FROM ubuntu:focal
 
-RUN sudo apt-get -y install build-essential
+RUN apt-get -y install build-essential
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 RUN nvm install 10.20.0
 RUN npm i -g --force yarn
